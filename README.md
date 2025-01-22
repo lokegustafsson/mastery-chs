@@ -18,7 +18,7 @@ Example usage:
   title: "Developing a Backend-Compatibility Check for the BNF Converter",
   subtitle: "And Implementing a Blazingly-Fast BNFC Back-End in Rust",
   authors: ("Jonathan Widén", "Leopold Wigbratt"),
-  supervisor: ("Adnreas Abel", department),
+  supervisor: ("Andreas Abel", department),
   examiner: ("Carl-Johan Seger", department),
   department: department,
   subject: "Computer Science and Engineering"
