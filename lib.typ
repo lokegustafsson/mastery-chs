@@ -167,6 +167,22 @@
     header: header()
   )
 
+  // Make the "Figure/Table" text in captions bold and left align wider captions
+  show figure.caption: it => box(
+    align(left)[
+      #text(weight: "bold")[
+        #it.supplement
+        #context it.counter.display(it.numbering) 
+      ]
+      #it.separator#it.body
+    ]
+  )
+
+  // Make captions for figures containing tables display above the table
+  show figure.where(
+  kind: table
+  ): set figure.caption(position: top)
+
   set heading(numbering: "1.1")
   counter(heading).update(0)
 
