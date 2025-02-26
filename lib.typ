@@ -58,7 +58,6 @@
   }
 
   // first page
-  set page(numbering: none)
   frontpage(school, date.year(), title, subtitle, authors.join([\ ]), department, subject)
 
   // third page (cover page)
@@ -157,6 +156,10 @@
   content
 ) = {
   set text(font-size)
+  set page(
+    footer: none,
+    numbering: "i"
+  )
 
   // prelude pages
   pages(school, date, title, subtitle, authors, department, subject, supervisor, examiner, abstract, keywords, acknowledgements, figures, tables)
@@ -164,7 +167,8 @@
   // default page style
   set page(
     footer: footer("1"),
-    header: header()
+    header: header(),
+    numbering: "1"
   )
 
   // Make the "Figure/Table" text in captions bold and left align wider captions
