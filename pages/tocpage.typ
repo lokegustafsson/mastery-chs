@@ -31,19 +31,15 @@
     pagebreak(to: "odd")
     v(100pt)
     align(center, text(24pt)[= List of Figures])
-    [
-      #outline(
-        title: none,
-        target: figure.where(kind: image),
-      )
-    ]
+    outline(
+      title: none,
+      target: figure.where(kind: image),
+    )
   }
   if tables {
     pagebreak(to: "odd")
     v(100pt)
     align(center, text(24pt)[= List of Tables])
-    [
-      #outline(title: none, target: figure.where(kind: table))
-    ]
+    outline(title: none, target: figure.where(kind: table))
   }
 }
