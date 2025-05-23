@@ -233,7 +233,7 @@
         v(30pt)
       })
     } else {
-      [#counter(heading).display() #h(text.size) #it.body]
+      block(sticky: true, [#counter(heading).display() #h(text.size) #it.body])
     }
   }
 
